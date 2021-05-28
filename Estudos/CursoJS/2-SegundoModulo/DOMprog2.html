@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTOS DOM</title>
+    <style>
+        div#botao{
+            font: bold 15pt Arial;
+            background: red;
+            color: white;
+            width: 200px;
+            height: 300px;
+            line-height: 300px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="botao">  <!-- onclick="clicar()" onmouseenter="entra()" onmouseout="saiu()"-->
+        CLIQUE AQUI
+    </div>
+    <script>
+        var a = window.document.getElementById('botao')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entra)
+        a.addEventListener('mouseout', saiu)
+
+        function clicar(){
+            a.innerText = 'Clicou!'
+            a.style.background = 'blue'
+        }
+        function entra(){
+            a.innerText = 'Entrou!'
+            a.style.backgroundColor = 'green'
+        }
+        function saiu(){
+            a.innerText = 'Saiu!'
+            a.style.backgroundColor = 'red'
+        }
+    </script>
+</body>
+</html>

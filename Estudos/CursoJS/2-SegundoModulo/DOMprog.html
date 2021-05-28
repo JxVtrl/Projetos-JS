@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciando estudos com DOM</title>
+    <style>
+        body {
+            font: normal 10pt Arial;
+            color:chartreuse;
+
+        }
+        div{
+            color:rgb(255, 255, 255);
+            font: bold 13pt Arial;
+        }
+
+        h1{
+            font: bold italic 50pt times;
+            color: rgb(64, 78, 78);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>-O ESTUDO DE DOM-</h1>
+    <p>Vamos ver o que que dá.<br/></p>
+    <p id="para2">Aprendendo a usar <strong>DOM</strong> em JS.<br/></p>
+    <div class="botao1"><br/>Clique em mim!<br/><br/></div>
+    <div id="botao2"><br/>Não clique em mim!<br/><br/></div>
+    <script>
+    
+    var paragrafo1 = window.document.getElementsByTagName('p')[0]
+    var paragrafo2 = window.document.getElementById('para2')
+    var botao1      = window.document.querySelector('div.botao1')
+    var botao2      = window.document.querySelector('div#botao2')
+    var corpo      = window.document.body
+
+    var numero = 
+    window.document.write(`Aqui está o parágrafo ${numero}: ` + paragrafo1.innerText)
+
+    paragrafo1.style.color = 'pink'
+    
+
+    corpo.style.background = 'black'
+    botao1.style.color = 'red'
+    botao1.style.background = 'green'
+    botao2.style.fontSize = '25'
+
+
+
+    </script>
+</body>
+</html>
