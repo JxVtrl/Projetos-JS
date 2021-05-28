@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+</head>
+<body>
+    <h1 id = "cabeca">Sistema de Multas </h1>
+    Velocidade do carro: <input type="number" name="velo" id="velo"> Km/h
+    <input type="button" value="Verificar" onclick="calcular()" id="butao">
+    <div id="res">
+
+    </div>
+    <script>
+    var permitidocima = 75
+    var permitidobaixo = 30
+    var agora = new Date()  
+    var hora = agora.getHours()
+    var minuto = agora.getMinutes()
+    var segundos = agora.getSeconds()
+    var dia = agora.getDate() 
+    var mes = agora.getMonth() 
+    var ano = agora.getFullYear() 
+
+    cabeca.innerHTML += `${dia}/${mes}/${ano} ${hora}:${minuto}:${segundos}`    
+    if(hora < 12 || hora > 5){
+        res.innerHTML = `<br/>Bom dia!<br/>`  
+    } else if(hora <= 18){
+        res.innerHTML = `<br/>Boa Tarde!<br/>`
+    } else if(hora <= 23){
+        res.innerHTML = `<br/>Boa Noite!<br/>`
+    } else{
+        res.innerHTML = `<br/>Boa Madrugada!<br/>`
+    }
+
+    function calcular(){
+        
+        var velocidade = window.document.querySelector('input#velo')
+        var vel = Number(velocidade.value)
+        var velmin = parseFloat((vel / 3.6).toFixed(2))
+
+
+        res.innerHTML += `<br/>Sua velocidade: <strong>${vel} Km/h</strong> ou <strong>${velmin} m/s</strong><br/>`
+        res.innerHTML += `<p>Velocidade permitida da via: <strong>min: ${permitidobaixo} Km/h max: ${permitidocima} Km/h</strong><p/>`
+            
+        if(vel > permitidocima || vel < permitidobaixo){
+            res.innerHTML += `<p><strong>Fora dos limites da via.</p>Você foi Multado.</strong>`
+        }
+        else {
+            res.innerHTML += `<p>Você não foi multado.<p>Dirija sempre com segurança!<p/>`
+        }
+        
+    }
+
+    </script>
+</body>
+</html>
