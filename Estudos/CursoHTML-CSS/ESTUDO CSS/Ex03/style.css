@@ -1,13 +1,33 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Limelight&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&family=Roboto+Condensed:wght@300&display=swap');
+
+@font-face {
+    font-family: 'Arcadian';
+    src: url(fonts/Acadian.ttf) format('truetype'), url(fonts/Acadian.otf) format('opentype');
+    /* 
+    Tipos de format()
+    -opentype (otf)
+    -truetype (ttf)
+    */
+}
 
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    
 }
+
 body{
     background-color: #79858c;
     background-attachment: fixed;
-    
+
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: bolder;
+    /*  ou  */
+    font: normal bolder 1em 'Work Sans';    
 }
+
 main {
     width: 800px;
     padding: 10px;
@@ -19,17 +39,23 @@ main {
 h1 {
     color: #F2F2F2;
     background-color: #79858cb0;
-    width: 248px;
+    width: fit-content;
     margin: auto;
     padding: 3px;
     text-shadow: 1px 1px 2px #D9D9D9;
     border-radius: 5px;
+    /* text-decoration: underline; */
+    font: normal bolder 2.2em 'Arcadian','Cinzel Decorative', 'sans-serif';
 }
 h2 {
     color: #262626;
     background-color: #D9D9D9;
+    
+    font: normal bolder 1.2em 'Roboto Condensed', 'sans-serif';
 }
 
 p {
     text-align: justify;
+    font: normal 300 1.2em 'Arcadian','Mate SC', 'sans-serif';
+    
 }
