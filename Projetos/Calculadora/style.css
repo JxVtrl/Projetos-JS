@@ -6,40 +6,58 @@
     user-select: none;
   }
 body{
-    text-align: center;
+    height: auto;
+    width: auto;
+    margin: auto;
+    display: table;
     background: linear-gradient(45deg, #e66465, #9198e5);
     background-attachment: fixed;
     font-family: Arial, sans-serif;
+    text-align: center;
+    align-content: center;
 }
 h1{
+    margin: auto;
+    margin-top: 30px;
     margin-bottom: 10px;
+    height: 75px;
+    width: 180px;
+    background-color: rgba(125, 134, 143, 0.37);
+    text-shadow: 2px 2px 3px #b3b3b3;
+    box-shadow: 5px 5px 25px #26262680;
+    border-radius: 15px;
+}
+h1:hover{
+    border: 0.5px solid rgba(192, 192, 192, 0.233);
+    -webkit-backdrop-filter: blur( 9.0px );
 }
 footer > p{
     font-family: 'Manrope';
-    background-color: rgba(128, 128, 128, 0.452);
-    -webkit-backdrop-filter: blur( 9.0px );
     margin: auto;
     height: 20px;
     width: 68px;
+    background-color: rgba(128, 128, 128, 0.452);
+    backdrop-filter: blur( 9.0px ); /* Blur Glass-Morphism */
+    margin-top: 455px;
     padding-bottom: 22px;
+    border: 1px solid rgba(255, 255, 255, 0.062);
     border-radius: 20px;
     box-shadow: 5px 5px 25px #26262680;
-    border: 1px solid rgba(255, 255, 255, 0.062);
 }
 #resultado{
     font: 45px 'Manrope', sans-serif;
+    color: white;
     text-align: end;
     height: 50px;
     margin-top: 10px;
+    margin-bottom: 25px;
     padding-top: 10px;
     padding-right: 15px;
-    margin-bottom: 25px;
 }
 
 #geral{
     background-color: black;
     color: white;
-    justify-content: center;
     width: 300px;
     height: auto;
     margin: auto;
@@ -48,8 +66,23 @@ footer > p{
     border-radius: 15px;
     font-size: 30px;
     box-shadow: 5px 5px 7px #26262680;
-
+    display: inline-block; /* MUDA SE A DIV É INLINE OU OUTLINE*/
+    float: right;           /* FLUTUAR A DIREITA */
 }
+
+/* Caso queira fazer a científica
+#botoes{
+    width: 50px;
+    height: 415px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    background-color: black;
+    border-radius: 20px;
+}
+*/
 button{
     width: 60px;
     height: 60px;
@@ -59,19 +92,15 @@ button{
     margin-bottom: 6px;
     font-size: 22px;
 }
-
-
 button:hover{
-    transition-property: none;
-    transition-duration: 2s;
+    opacity: 0.5;
     -webkit-backdrop-filter: blur( 9.0px );
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.575);
-    transition-duration: 2s;
+    transition-duration: 1s;
 }
 
-
 #zero{
-    width: 120px;
+    width: 125px;
     border-top-width: 60px;
     border-radius: 55px;
 }

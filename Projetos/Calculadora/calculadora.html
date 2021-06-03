@@ -8,41 +8,43 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Calculadora</h1>
+    <h1>Apple Calculator</h1>
+    <div id="botoes">
+    </div>
     <div id="geral">
         <p id="resultado"></p>
         <div>
             <button class:"botao" type="button" class="cinzas" onclick="reset()">AC</button>
             <button class:"botao" type="button" class="cinzas" onclick="inverter()">±</button>
-            <button class:"botao" type="button" class="cinzas">%</button>
-            <button class:"botao" type="button" class="laranjas">÷</button>
+            <button class:"botao" type="button" class="cinzas" onclick="porcem()">%</button>
+            <button class:"botao" type="button" class="laranjas" onclick="operacao('/')">÷</button>
         </div>
         <div>
             <button class:"botao" type="button" class="pretos" onclick="inserir('7')">7</button>
             <button class:"botao" type="button" class="pretos" onclick="inserir('8')">8</button>
             <button class:"botao" type="button" class="pretos" onclick="inserir('9')">9</button>
-            <button class:"botao" type="button" class="laranjas">⨯</button>
+            <button class:"botao" type="button" class="laranjas" onclick="operacao('*')">⨯</button>
         </div>
         <div>
             <button class:"botao" type="button" class="pretos" onclick="inserir('4')">4</button>
             <button class:"botao" type="button" class="pretos" onclick="inserir('5')">5</button>
             <button class:"botao" type="button" class="pretos" onclick="inserir('6')">6</button>
-            <button class:"botao" type="button" class="laranjas">-</button>
+            <button class:"botao" type="button" class="laranjas" onclick="operacao('-')">-</button>
         </div>
         <div>
             <button class:"botao" type="button" class="pretos" onclick="inserir('1')">1</button>
             <button class:"botao" type="button" class="pretos" onclick="inserir('2')">2</button>
             <button class:"botao" type="button" class="pretos" onclick="inserir('3')">3</button>
-            <button class:"botao" type="button" class="laranjas">+</button>
+            <button class:"botao" type="button" class="laranjas" onclick="operacao('+')">+</button>
         </div>
         <div>
             <button class:"botao" type="button" id="zero" class="pretos" onclick="inserir(0)">0</button>
-            <button class:"botao" type="button" class="pretos">,</button>
-            <button class:"botao" type="button" class="laranjas">=</button>
+            <button class:"botao" type="button" class="pretos" onclick="inserir('.')">.</button>
+            <button class:"botao" type="button" class="laranjas" onclick="calcular()">=</button>
         </div>
     </div>
     <footer>
-        <p>&copy; Jxvtrl</p>
+        <p><a href="https://github.com/JxVtrl" target="_blank">&copy; Jxvtrl</a></p>
     </footer>
     <script src="script.js"></script>
 </body>
