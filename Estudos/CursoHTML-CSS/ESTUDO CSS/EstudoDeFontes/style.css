@@ -19,7 +19,7 @@
 
 body{
     background-color: #79858c;
-    background-attachment: fixed;
+    background-attachment: fixed; /* PARA FIXAR O BACKGROUND EM TODA A TELA */
 
     font-family: 'Work Sans', Arial, Helvetica, sans-serif;
     font-size: 1em;
@@ -40,11 +40,11 @@ h1 {
     color: #F2F2F2;
     background-color: #79858cb0;
     width: fit-content;
-    margin: auto;
-    padding: 3px;
-    text-shadow: 1px 1px 2px #D9D9D9;
-    border-radius: 5px;
-    /* text-decoration: underline; */
+    margin: auto; /* CENTRALIZADOR */
+    padding: 3px; /* ESPAÇO DO H1 PARA A BORDA DA DIV */
+    text-shadow: 1px 1px 2px #D9D9D9; /* SOMBRA DE TEXTO */
+    border-radius: 5px; /* ARREDONDAMENTO DE BORDA */
+    text-decoration: underline; /* PARA SUBLINHAR */
     font: normal bolder 2.2em 'Arcadian','Cinzel Decorative', 'sans-serif';
 }
 h2 {

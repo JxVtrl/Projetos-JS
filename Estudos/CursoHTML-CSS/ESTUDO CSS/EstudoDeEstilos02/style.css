@@ -14,6 +14,6 @@ h2 {
     color: rgb(252, 125, 125);
 }
 p {
-    text-align: justify;
+    text-align: justify; /* DEIXA O TEXTO ARRUMADO*/
 
 }

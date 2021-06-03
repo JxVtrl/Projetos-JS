@@ -8,10 +8,10 @@ h1 {
     background-color: #79858c70;
     color: black;
     width: fit-content;
-    margin: auto; /* Para centralizar qnd define width ou heigth*/
-    border-radius: 5px;
-    box-shadow: 5px 5px 15px #26262680;
-    text-shadow: 3px 4px 4px #a3a2a2bb;
+    margin: auto;           /* Para centralizar qnd define width ou heigth*/
+    border-radius: 5px;     /* ARREDONDAR A BORDA */
+    box-shadow: 5px 5px 15px #26262680; /* SOMBRA PARA A DIV */
+    text-shadow: 3px 4px 4px #a3a2a2bb; /* SOMBRA PARA O TEXTO */
 }
 h2 {
     background-color: #79858c70;
@@ -19,7 +19,7 @@ h2 {
 p#primeiro{ /* ou apenas #primeiro */
     width: 1000px;
     margin: auto;
-    text-align: center;
+    text-align: center; /* ALINHAMENTO DE TEXTO */
 }
 p#segundo{ /* ou apenas #segundo */
     width: 1000px;
