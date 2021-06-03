@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+/* 
+    em HTML é id    = em CSS é # (Só pode um elemento por página)
+    em HTML é class = em CSS é . (Pode vários elementos)
+*/
+h1 {
+    background-color: #79858c70;
+    color: black;
+    width: fit-content;
+    margin: auto; /* Para centralizar qnd define width ou heigth*/
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px #26262680;
+    text-shadow: 3px 4px 4px #a3a2a2bb;
+}
+h2 {
+    background-color: #79858c70;
+}
+p#primeiro{ /* ou apenas #primeiro */
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+p#segundo{ /* ou apenas #segundo */
+    width: 1000px;
+    margin: auto;
+    text-align: center;   
+}
+.tit{
+    color: red;
+}
+.basico{ 
+    background-color: green;
+    width: fit-content;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+}
+.intermediario{
+    background-color: yellow;
+    width: fit-content;
+    border-radius: 5px;
+}
+.avancado{
+    background-color: red;
+    width: fit-content;
+    border-radius: 5px;
+}
+.destaque{
+    text-shadow: 4px 4px 4px #a3a2a2bb;
+}
