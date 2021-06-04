@@ -10,29 +10,29 @@
 <body>
     <h1>Calculadora Científica Apple</h1>
     <div id="calculadora_geral" style="background-image: url(img/displayUp.png);">
-        <div >
-        <p id="result" style="display: inline-block;">0</p>
+        <div id="resultadodiv">
+            <p id="result" style="display: block;">0</p>
         </div>
-        <div id="divs">
+        <div id="divsbotoes">
             <div id="cien">
                 <div class="linhatop">
-                    <div class="linha1"><button class="botoes btn-preto" id="esquerda">(</button></div>
+                    <div class="linha1 esquerda"><button class="botoes btn-preto" >(</button></div>
                     <div class="linha1"><button class="botoes btn-preto">)</button></div>
                     <div class="linha1"><button class="botoes btn-preto">mc</button></div>
                     <div class="linha1"><button class="botoes btn-preto">m+</button></div>
                     <div class="linha1"><button class="botoes btn-preto">m-</button></div>
-                    <div class="linha1"><button class="botoes btn-preto">mr</button></div>
+                    <div class="linha1"><button class="botoes btn-preto ">mr</button></div>
                 </div>
                 <div>
-                    <div class="linha2"><button class="botoes btn-preto" id="esquerda">2<sup>nd</sup></button></div>
+                    <div class="linha2 esquerda"><button class="botoes btn-preto" >2<sup>nd</sup></button></div>
                     <div class="linha2"><button class="botoes btn-preto">x<sup>2</sup></button></div>
                     <div class="linha2"><button class="botoes btn-preto">x<sup>3</sup></button></div>
                     <div class="linha2"><button class="botoes btn-preto">x<sup>y</sup></button></div>
                     <div class="linha2"><button class="botoes btn-preto">e<sup>x</sup></button></div>
-                    <div class="linha2"><button class="botoes btn-preto">10<sup>x</sup></button></div>
+                    <div class="linha2"><button class="botoes btn-preto ">10<sup>x</sup></button></div>
                 </div>
                 <div>
-                    <div class="linha3"><button class="botoes btn-preto" id="esquerda"><sup><small>1</small></sup><big>&frasl;</big><small>x</small></button></div>
+                    <div class="linha3 esquerda"><button class="botoes btn-preto" ><sup><small>1</small></sup><big>&frasl;</big><small>x</small></button></div>
                     <div class="linha3"><button class="botoes btn-preto">√x</button></div>
                     <div class="linha3"><button class="botoes btn-preto">∛x</button></div>
                     <div class="linha3"><button class="botoes btn-preto">∜x</button></div>
@@ -40,7 +40,7 @@
                     <div class="linha3"><button class="botoes btn-preto">log<sub>10</sub></button></div>
                 </div>
                 <div>
-                    <div class="linha4"><button class="botoes btn-preto" id="esquerda">x!</button></div>
+                    <div class="linha4 esquerda"><button class="botoes btn-preto" >x!</button></div>
                     <div class="linha4"><button class="botoes btn-preto">sin</button></div>
                     <div class="linha4"><button class="botoes btn-preto">cos</button></div>
                     <div class="linha4"><button class="botoes btn-preto">tan</button></div>
@@ -48,7 +48,7 @@
                     <div class="linha4"><button class="botoes btn-preto">EE</button></div>
                 </div>
                 <div>
-                    <div class="linha5"><button class="botoes btn-preto" id="esquerda">Rad</button></div>
+                    <div class="linha5  esquerda"><button class="botoes btn-preto" >Rad</button></div>
                     <div class="linha5"><button class="botoes btn-preto">sinh</button></div>
                     <div class="linha5"><button class="botoes btn-preto">cosh</button></div>
                     <div class="linha5"><button class="botoes btn-preto">tanh</button></div>
@@ -58,33 +58,33 @@
             </div>
             <div id="normal">
                 <div class="linhatop">
-                    <div class="linha1"><button class="botoes btn-branco">AC</button></div>
+                    <div class="linha1 separa"><button class="botoes btn-branco">AC</button></div>
                     <div class="linha1"><button class="botoes btn-branco">±</button></div>
                     <div class="linha1"><button class="botoes btn-branco">%</button></div>
-                    <div class="linha1"><button class="botoes btn-laranja">÷</button></div>
+                    <div class="linha1"><button class="botoes btn-laranja">&divide;</button></div>
                 </div>
                 <div>
-                    <div class="linha2"><button class="botoes btn-cinza">7</button></div>
+                    <div class="linha2 separa"><button class="botoes btn-cinza ">7</button></div>
                     <div class="linha2"><button class="botoes btn-cinza">8</button></div>
                     <div class="linha2"><button class="botoes btn-cinza">9</button></div>
-                    <div class="linha2"><button class="botoes btn-laranja" >⨯</button></div>
+                    <div class="linha2"><button class="botoes btn-laranja">⨯</button></div>
                 </div>
                 <div class="linha">
-                    <div class="linha3"><button class="botoes btn-cinza">4</button></div>
+                    <div class="linha3 separa"><button class="botoes btn-cinza">4</button></div>
                     <div class="linha3"><button class="botoes btn-cinza">5</button></div>
                     <div class="linha3"><button class="botoes btn-cinza">6</button></div>
                     <div class="linha3"><button class="botoes btn-laranja">-</button></div>
                 </div>
                 <div class="linha">
-                    <div class="linha4"><button class="botoes btn-cinza">1</button></div>
+                    <div class="linha4 separa"><button class="botoes btn-cinza">1</button></div>
                     <div class="linha4"><button class="botoes btn-cinza">2</button></div>
                     <div class="linha4"><button class="botoes btn-cinza">3</button></div>
                     <div class="linha4"><button class="botoes btn-laranja">+</button></div>
                 </div>
                 <div class="linha" id="linhaUltima">
-                    <div class="linha5"><button class="botoes btn-cinza baixo" id="botao_zero">0</button></div>
-                    <div class="linha5"><button class="botoes btn-cinza baixo">,</button></div>
-                    <div class="linha5"><button class="botoes btn-laranja baixo">=</button></div>
+                    <div class="linha5 separa"><button class="botoes btn-cinza" id="botao_zero">0</button></div>
+                    <div class="linha5 "><button class="botoes btn-cinza">,</button></div>
+                    <div class="linha5 "><button class="botoes btn-laranja">=</button></div>
                 </div>
             </div>
         </div>
