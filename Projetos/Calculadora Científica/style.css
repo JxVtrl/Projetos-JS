@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+    user-select: none;
+  }
+body{
+    background: linear-gradient(45deg, #4d4d4d81, #A5A6A5);
+    background-attachment: fixed;
+    margin: auto;
+    font: 18px 'Manrope', sans-serif;
+}
+h1{
+    font: 16px 'Manrope', sans-serif;
+    margin-left: 10px;
+}
+div > p{
+    margin-bottom: 0px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    font-size: 35px;
+}
+#result{
+    color: white;
+    text-align: end;
+    margin-right: 42px;
+    padding-bottom: 0;
+    display: block;
+}
+#calculadora_geral{
+    width: 700px;
+    height: 340px;
+    position: center;
+    margin-top: 0;
+    padding-top: 0;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    text-align: center; 
+}
+#divs{
+    display: inline-flex;
+}
+
+/* BOTÕES */
+button{
+    background-color: none;
+    
+}
+.linha1{
+    display: inline-block;
+    margin-top: 0px;
+}
+.linha2{
+    display: inline-flex;
+}
+.linha3{
+    display: inline-flex;
+}
+.linha4{
+    display: inline-flex;
+}
+.linha5{
+    display: inline-flex;
+}
+.btn-preto{
+    background-color: #212121;
+    color: white;
+    font-size: 12px;
+    font-weight: 105%;
+}
+.btn-branco{
+    background-color: #A5A6A5;
+    font-weight: bold;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+.btn-cinza{
+    background-color: #333333;
+    color: white;
+    font-size: 105%;
+    font-weight: normal;
+    
+}
+.btn-laranja{
+    background-color: #FF9F0A;
+    color: white;
+    font-size: 120%;
+}
+.botoes{
+    position: relative;
+    width: 45px;
+    height: 35px;
+    margin: 4px;
+    border-radius: 43%;
+    border: 0;
+    outline: none;
+}
+#baixo{
+    margin-bottom: 55px;
+    
+}
+#botao_zero{
+    width: 100px;
+    height: 40px;
+    margin-left: 2px;
+    padding-left: 0px;
+    border-radius: 45%;
+    text-align: left;
+    padding-left: 15px;
+}
+
+
