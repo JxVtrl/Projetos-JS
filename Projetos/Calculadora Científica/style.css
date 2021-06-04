@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
+
 * {
     box-sizing: border-box;
     user-select: none;
@@ -6,60 +7,78 @@
 body{
     background: linear-gradient(45deg, #4d4d4d81, #A5A6A5);
     background-attachment: fixed;
-    margin: auto;
-    font: 18px 'Manrope', sans-serif;
+    font: 16px 'Manrope', sans-serif;
 }
 h1{
     font: 16px 'Manrope', sans-serif;
     margin-left: 10px;
 }
-div > p{
-    margin-bottom: 0px;
-    padding-top: 20px;
-    padding-bottom: 0px;
-    font-size: 35px;
-}
-#result{
-    color: white;
-    text-align: end;
-    margin-right: 42px;
-    padding-bottom: 0;
-    display: block;
-}
+            /* GERAL BACKGROUND */
 #calculadora_geral{
     width: 700px;
     height: 340px;
     position: center;
-    margin-top: 0;
-    padding-top: 0;
     background-size: 100% 100%;
-    margin: 0 auto;
+    margin: auto;
     text-align: center; 
 }
-#divs{
-    display: inline-flex;
+            /* Display Resultado */
+#result{
+    color: white;
+    text-align: end;
+    margin-right: 65px;
+    margin-bottom: 0px;
+    padding-top: 15px;
 }
+#resultadodiv{
+    height: 45px;
+    margin: auto;
+}
+body > div > div > p{
+    display: inline-block;
 
-/* BOTÕES */
-button{
+    font-size: 35px;
+    font-weight: 600;
+    text-align: end;
+}
+            /* BOTÕES */
+#divsbotoes{
+    display: inline-flex;
+    margin-top: 12px;
+}
+.botoes{
     background-color: none;
-    
+    position: relative;
+    text-align: center;
+    width: 52px;
+    height: 45px;
+    border-radius: 43%;
+    border: 0;              /* Deixar sem borda */
+    outline: none;          /* Para tirar o contorno ao selecionar */
+    margin-top: 3px;
+    margin-right: 5px; 
+}
+#botao_zero{
+    width: 110px;
+    height: 45px;
+    padding-left: 20px;     /* Alinhar o 0 */
+    border-radius: 18px;    /* Para o formato de pilula*/
+    text-align: left;       /* Fixar a esquerda */
 }
 .linha1{
-    display: inline-block;
-    margin-top: 0px;
+    display: inline;
 }
 .linha2{
-    display: inline-flex;
+    display: inline;
 }
 .linha3{
-    display: inline-flex;
+    display: inline;
 }
 .linha4{
-    display: inline-flex;
+    display: inline;
 }
 .linha5{
-    display: inline-flex;
+    display: inline;
 }
 .btn-preto{
     background-color: #212121;
@@ -70,42 +89,20 @@ button{
 .btn-branco{
     background-color: #A5A6A5;
     font-weight: bold;
-    margin-top: 0px;
-    padding-top: 0px;
 }
 .btn-cinza{
     background-color: #333333;
     color: white;
     font-size: 105%;
     font-weight: normal;
-    
 }
 .btn-laranja{
     background-color: #FF9F0A;
     color: white;
-    font-size: 120%;
 }
-.botoes{
-    position: relative;
-    width: 45px;
-    height: 35px;
-    margin: 4px;
-    border-radius: 43%;
-    border: 0;
-    outline: none;
+.separa{
+    margin-left: 3px;
 }
-#baixo{
-    margin-bottom: 55px;
-    
+.esquerda{
+    margin-left: 18px;
 }
-#botao_zero{
-    width: 100px;
-    height: 40px;
-    margin-left: 2px;
-    padding-left: 0px;
-    border-radius: 45%;
-    text-align: left;
-    padding-left: 15px;
-}
-
-
