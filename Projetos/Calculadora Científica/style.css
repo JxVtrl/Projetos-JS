@@ -15,36 +15,55 @@ h1{
 }
             /* GERAL BACKGROUND */
 #calculadora_geral{
+    background-size: 100% 100%;
     width: 700px;
     height: 340px;
-    position: center;
-    background-size: 100% 100%;
     margin: auto;
     text-align: center; 
 }
             /* Display Resultado */
 #result{
     color: white;
+    display: inline-block;
     text-align: end;
     margin-right: 65px;
-    margin-bottom: 0px;
     padding-top: 15px;
+    font-size: 35px;
+    font-weight: 600;
 }
 #resultadodiv{
     height: 45px;
     margin: auto;
 }
-body > div > div > p{
-    display: inline-block;
-
-    font-size: 35px;
+            /* Footer */
+#footerid{
+    margin: auto;
+    margin-top: 15px;
+    height: 23px;
+    width: 63px;
+    padding-left: 3px;
+    background-color: #26262644;
+    backdrop-filter: blur( 9.0px ); /* Blur Glass-Morphism */
+    border: 1px solid rgba(185, 185, 185, 0.678);
+    border-radius: 16px;
+    box-shadow: 2px 2px 15px #26262662;
+}
+#id{
+    font-family: 'Manrope', sans-seriff;
     font-weight: 600;
-    text-align: end;
+    color: rgb(59, 58, 131);
+    text-decoration: none;
+
+}
+#id:visited{
+    color: rgb(71, 224, 212);
+    text-decoration: none;
 }
             /* BOTÕES */
 #divsbotoes{
     display: inline-flex;
     margin-top: 12px;
+    margin-left: 25px;
 }
 .botoes{
     background-color: none;
@@ -65,21 +84,6 @@ body > div > div > p{
     border-radius: 18px;    /* Para o formato de pilula*/
     text-align: left;       /* Fixar a esquerda */
 }
-.linha1{
-    display: inline;
-}
-.linha2{
-    display: inline;
-}
-.linha3{
-    display: inline;
-}
-.linha4{
-    display: inline;
-}
-.linha5{
-    display: inline;
-}
 .btn-preto{
     background-color: #212121;
     color: white;
@@ -88,7 +92,9 @@ body > div > div > p{
 }
 .btn-branco{
     background-color: #A5A6A5;
+    color: black;
     font-weight: bold;
+    font-size: 15px;
 }
 .btn-cinza{
     background-color: #333333;
@@ -99,10 +105,11 @@ body > div > div > p{
 .btn-laranja{
     background-color: #FF9F0A;
     color: white;
+    font-size: 18px;
 }
-.separa{
-    margin-left: 3px;
+#normal{
+    width: 238px;
 }
-.esquerda{
-    margin-left: 18px;
+#cien{
+    width: 358px;
 }
