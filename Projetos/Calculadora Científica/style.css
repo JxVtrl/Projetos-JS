@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
 
 * {
-    box-sizing: border-box;
     user-select: none;
   }
 body{
@@ -28,15 +27,20 @@ h1{
     text-align: end;
     margin-right: 65px;
     padding-top: 15px;
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 600;
 }
 #resultadodiv{
     height: 45px;
     margin: auto;
+    margin-bottom: 5px;
+}
+
+#parteNestatica{
+    margin-left: 110px;
 }
             /* Footer */
-#footerid{
+#footer{
     margin: auto;
     margin-top: 15px;
     height: 23px;
@@ -53,7 +57,6 @@ h1{
     font-weight: 600;
     color: rgb(59, 58, 131);
     text-decoration: none;
-
 }
 #id:visited{
     color: rgb(71, 224, 212);
@@ -63,13 +66,13 @@ h1{
 #divsbotoes{
     display: inline-flex;
     margin-top: 12px;
-    margin-left: 25px;
+    width: 700px;
 }
 .botoes{
     background-color: none;
     position: relative;
     text-align: center;
-    width: 52px;
+    width: 55px;
     height: 45px;
     border-radius: 43%;
     border: 0;              /* Deixar sem borda */
@@ -77,8 +80,16 @@ h1{
     margin-top: 3px;
     margin-right: 5px; 
 }
+
+#cientifica{
+    width: auto;
+}
+#normal{
+    width: auto;
+}
+
 #botao_zero{
-    width: 110px;
+    width: 120px;
     height: 45px;
     padding-left: 20px;     /* Alinhar o 0 */
     border-radius: 18px;    /* Para o formato de pilula*/
@@ -107,9 +118,10 @@ h1{
     color: white;
     font-size: 18px;
 }
-#normal{
-    width: 238px;
-}
-#cien{
-    width: 358px;
+
+/* IMAGEM */
+#imgEscolhida{
+    position: absolute;
+    background-size: 100% 100%;
+    display: block;
 }
