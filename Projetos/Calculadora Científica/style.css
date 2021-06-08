@@ -18,7 +18,7 @@ h1{
     margin: auto;
     display: block;
     position: relative;
-    transform: translateY(50%);
+    transform: translateY(25%);
 }
             /* Resultado */
 #result{
@@ -47,7 +47,7 @@ h1{
 #footer{
     display: block;
     margin: auto;
-    margin-top: 250px;
+    margin-top: 150px;
     height: 23px;
     width: 63px;
     padding-left: 7px;
