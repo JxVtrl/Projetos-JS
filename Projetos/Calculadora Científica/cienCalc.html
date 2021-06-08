@@ -25,47 +25,47 @@
                     <tr>
                         <td class="linha1 esquerda"><button class="botoes btn-preto" onclick="inserir('(')">(</button></td>
                         <td class="linha1"><button class="botoes btn-preto" onclick="inserir(')')">)</button></td>
-                        <td class="linha1"><button class="botoes btn-preto">mc</button></td>
-                        <td class="linha1"><button class="botoes btn-preto">m+</button></td>
-                        <td class="linha1"><button class="botoes btn-preto">m-</button></td>
-                        <td class="linha1"><button class="botoes btn-preto ">mr</button></td>
+                        <td class="linha1"><button class="botoes btn-preto" style="background-color: green;">mc</button></td>
+                        <td class="linha1"><button class="botoes btn-preto" style="background-color: green;">m+</button></td>
+                        <td class="linha1"><button class="botoes btn-preto" style="background-color: green;">m-</button></td>
+                        <td class="linha1"><button class="botoes btn-preto " style="background-color: green;">mr</button></td>
                     </tr>
                     <tr>
-                        <td class="linha2 esquerda"><button class="botoes btn-preto" >2<sup>nd</sup></button></td>
-                        <td class="linha2"><button class="botoes btn-preto">x<sup>2</sup></button></td>
-                        <td class="linha2"><button class="botoes btn-preto">x<sup>3</sup></button></td>
-                        <td class="linha2"><button class="botoes btn-preto">x<sup>y</sup></button></td>
-                        <td class="linha2"><button class="botoes btn-preto">e<sup>x</sup></button></td>
-                        <td class="linha2"><button class="botoes btn-preto ">10<sup>x</sup></button></td>
+                        <td class="linha2 esquerda"><button class="botoes btn-preto" style="background-color: green;">2<sup>nd</sup></button></td>
+                        <td class="linha2"><button class="botoes btn-preto" onclick="potencia(2)">x<sup>2</sup></button></td>
+                        <td class="linha2"><button class="botoes btn-preto" onclick="potencia(3)">x<sup>3</sup></button></td>
+                        <td class="linha2"><button class="botoes btn-preto" onclick="elevado()">x<sup>y</sup></button></td>
+                        <td class="linha2"><button class="botoes btn-preto" onclick="ConstE()">e<sup>x</sup></button></td>
+                        <td class="linha2"><button class="botoes btn-preto" onclick="potencia('',10)">10<sup>x</sup></button></td>
                     </tr>
                     <tr>
-                        <td class="linha3 esquerda"><button class="botoes btn-preto" ><sup><small>1</small></sup><big>&frasl;</big><small>x</small></button></td>
-                        <td class="linha3"><button class="botoes btn-preto">√x</button></td>
-                        <td class="linha3"><button class="botoes btn-preto">∛x</button></td>
-                        <td class="linha3"><button class="botoes btn-preto">∜x</button></td>
-                        <td class="linha3"><button class="botoes btn-preto">ln</button></td>
-                        <td class="linha3"><button class="botoes btn-preto">log<sub>10</sub></button></td>
+                        <td class="linha3 esquerda"><button class="botoes btn-preto" onclick="inversao()" ><sup><small>1</small></sup><big>&frasl;</big><small>x</small></button></td>
+                        <td class="linha3"><button class="botoes btn-preto" onclick="sqrt(2)">√x</button></td>
+                        <td class="linha3"><button class="botoes btn-preto" onclick="sqrt(3)">∛x</button></td>
+                        <td class="linha3"><button class="botoes btn-preto" onclick="sqrt(4)">∜x</button></td>
+                        <td class="linha3"><button class="botoes btn-preto" onclick="ln()">ln</button></td>
+                        <td class="linha3"><button class="botoes btn-preto" onclick="log10()">log<sub>10</sub></button></td>
                     </tr>
                     <tr>
-                        <td class="linha4 esquerda"><button class="botoes btn-preto">x!</button></td>
-                        <td class="linha4"><button class="botoes btn-preto">sin</button></td>
-                        <td class="linha4"><button class="botoes btn-preto">cos</button></td>
-                        <td class="linha4"><button class="botoes btn-preto">tan</button></td>
-                        <td class="linha4"><button class="botoes btn-preto">e</button></td>
-                        <td class="linha4"><button class="botoes btn-preto">EE</button></td>
+                        <td class="linha4 esquerda"><button class="botoes btn-preto" style="background-color: green;">x!</button></td>
+                        <td class="linha4"><button class="botoes btn-preto" style="background-color: green;">sin</button></td>
+                        <td class="linha4"><button class="botoes btn-preto" style="background-color: green;">cos</button></td>
+                        <td class="linha4"><button class="botoes btn-preto" style="background-color: green;">tan</button></td>
+                        <td class="linha4"><button class="botoes btn-preto" style="background-color: green;">e</button></td>
+                        <td class="linha4"><button class="botoes btn-preto" onclick="exponencial()">EE</button></td>
                     </tr>
                     <tr>
-                        <td class="linha5 esquerda"><button class="botoes btn-preto">Rad</button></td>
-                        <td class="linha5"><button class="botoes btn-preto">sinh</button></td>
-                        <td class="linha5"><button class="botoes btn-preto">cosh</button></td>
-                        <td class="linha5"><button class="botoes btn-preto">tanh</button></td>
-                        <td class="linha5"><button class="botoes btn-preto">π</button></td>
-                        <td class="linha5"><button class="botoes btn-preto">Rand</button></td>
+                        <td class="linha5 esquerda"><button class="botoes btn-preto" style="background-color: green;">Rad</button></td>
+                        <td class="linha5"><button class="botoes btn-preto" style="background-color: green;">sinh</button></td>
+                        <td class="linha5"><button class="botoes btn-preto" style="background-color: green;">cosh</button></td>
+                        <td class="linha5"><button class="botoes btn-preto" style="background-color: green;">tanh</button></td>
+                        <td class="linha5"><button class="botoes btn-preto" style="background-color: green;">π</button></td>
+                        <td class="linha5"><button class="botoes btn-preto" style="background-color: green;">Rand</button></td>
                     </tr>
                 </div>
                 <div id="normal">
                     <tr>
-                        <td><button class="botoes btn-branco" onclick="reset()">AC</button></td>
+                        <td><button class="botoes btn-branco" onclick="reset()" id="ac">AC</button></td>
                         <td><button class="botoes btn-branco" onclick="inverter()">±</button></td>
                         <td><button class="botoes btn-branco" onclick="porcem()">%</button></td>
                         <td><button class="botoes btn-laranja" onclick="inserir('/')">&divide;</button></td>
