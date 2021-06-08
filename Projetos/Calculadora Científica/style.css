@@ -1,127 +1,179 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
 
-* {
-    user-select: none;
-  }
+*{
+    user-select: none;}
+
 body{
     background: linear-gradient(45deg, #4d4d4d81, #A5A6A5);
     background-attachment: fixed;
-    font: 16px 'Manrope', sans-serif;
-}
+    font: 16px 'Manrope', sans-serif;}
+
 h1{
     font: 16px 'Manrope', sans-serif;
     margin-left: 10px;
 }
             /* GERAL BACKGROUND */
 #calculadora_geral{
-    background-size: 100% 100%;
-    width: 700px;
-    height: 340px;
+    width: auto;
+    height: auto;
     margin: auto;
-    text-align: center; 
+    display: block; 
 }
-            /* Display Resultado */
+            /* Resultado */
 #result{
     color: white;
-    display: inline-block;
+    display: block;
     text-align: end;
-    margin-right: 65px;
+    margin: auto;
+    width: 685px;
     padding-top: 15px;
     font-size: 40px;
-    font-weight: 600;
-}
+    font-weight: 600;}
+
 #resultadodiv{
     height: 45px;
-    margin: auto;
-    margin-bottom: 5px;
-}
+    margin-right:25px;
+    margin-bottom: 15px;}
 
-#parteNestatica{
-    margin-left: 110px;
+        /* Display Calculadora(BTNS & RESULT) */
+#calculadora{
+    width: auto;
+    height: auto;
+    margin: auto;
 }
             /* Footer */
 #footer{
+    display: block;
     margin: auto;
-    margin-top: 15px;
+    margin-top: 60px;
     height: 23px;
     width: 63px;
-    padding-left: 3px;
+    padding-left: 7px;
     background-color: #26262644;
     backdrop-filter: blur( 9.0px ); /* Blur Glass-Morphism */
     border: 1px solid rgba(185, 185, 185, 0.678);
     border-radius: 16px;
-    box-shadow: 2px 2px 15px #26262662;
-}
+    box-shadow: 2px 2px 15px #26262662;}
 #id{
     font-family: 'Manrope', sans-seriff;
     font-weight: 600;
     color: rgb(59, 58, 131);
-    text-decoration: none;
-}
+    text-decoration: none;}
 #id:visited{
     color: rgb(71, 224, 212);
-    text-decoration: none;
-}
+    text-decoration: none;}
             /* BOTÕES */
 #divsbotoes{
     display: inline-flex;
+    position: relative;
     margin-top: 12px;
-    width: 700px;
+    width: 685px;
+    right: 50%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .botoes{
     background-color: none;
     position: relative;
-    text-align: center;
-    width: 55px;
-    height: 45px;
+    width: 60px;
+    height: 50px;
+    margin-top: 3px;
+    margin-right: 5px;
+    left: 15px;
     border-radius: 43%;
     border: 0;              /* Deixar sem borda */
-    outline: none;          /* Para tirar o contorno ao selecionar */
-    margin-top: 3px;
-    margin-right: 5px; 
-}
+    outline: none;}          /* Para tirar o contorno ao selecionar */
 
 #cientifica{
-    width: auto;
-}
+    width: auto;}
 #normal{
-    width: auto;
-}
-
+    width: auto;}
 #botao_zero{
-    width: 120px;
-    height: 45px;
-    padding-left: 20px;     /* Alinhar o 0 */
-    border-radius: 18px;    /* Para o formato de pilula*/
-    text-align: left;       /* Fixar a esquerda */
-}
+    width: 129px;
+    height: 50px;
+    padding-left: 20px;     
+    border-radius: 18px;    
+    text-align: left;}
+
 .btn-preto{
     background-color: #212121;
     color: white;
     font-size: 12px;
-    font-weight: 105%;
-}
+    font-weight: 105%;}
 .btn-branco{
     background-color: #A5A6A5;
     color: black;
     font-weight: bold;
-    font-size: 15px;
-}
+    font-size: 15px;}
 .btn-cinza{
     background-color: #333333;
     color: white;
     font-size: 105%;
-    font-weight: normal;
-}
+    font-weight: normal;}
 .btn-laranja{
     background-color: #FF9F0A;
     color: white;
-    font-size: 18px;
-}
+    font-size: 18px;}
 
 /* IMAGEM */
 #imgEscolhida{
     position: absolute;
     background-size: 100% 100%;
-    display: block;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+@media (max-width: 850px){ 
+/* Só vai ativar quando o width estiver menor de 850px */
+    #calculadora{
+        width: 400px;
+        height: 800px;
+    }
+    .botoes{
+        width: 75px;
+        height: 75px;
+        border-radius: 100%;
+        margin-bottom: 5px;
+        margin-left: 5px;
+        font-size: 22px;
+    }
+    #botao_zero{
+        height: 75px;
+        width: 157px;
+        border-radius: 30px;
+        margin-right: 10px;
+        padding-left: 30px;
+    }
+    #divsbotoes{
+        width: auto;
+        padding-left: 20px;
+    }    
+    #cientifica{
+        display: none;}
+    #normal{
+        display: block;
+        width: 400px;
+        right: 50%;
+        left: 50%;
+    }
+    #resultadodiv{
+        width: 400px;
+        height: 50px;
+        padding-top: 210px;
+        padding-bottom: 15px;
+    }
+    #result{
+        width: 350px;
+        font-size: 50px;
+        padding-right: 45px;
+        font-weight: 200;
+        font-size: 60px;
+    }
+    #footer{
+        margin-top: 5px;
+    }
 }
