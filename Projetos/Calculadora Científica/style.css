@@ -17,7 +17,9 @@ h1{
     width: auto;
     height: auto;
     margin: auto;
-    display: block; 
+    display: block;
+    position: relative;
+    transform: translateY(50%);
 }
             /* Resultado */
 #result{
@@ -33,7 +35,8 @@ h1{
 #resultadodiv{
     height: 45px;
     margin-right:25px;
-    margin-bottom: 15px;}
+    margin-bottom: 15px;
+    padding-top: 7px;}
 
         /* Display Calculadora(BTNS & RESULT) */
 #calculadora{
@@ -45,12 +48,12 @@ h1{
 #footer{
     display: block;
     margin: auto;
-    margin-top: 60px;
+    margin-top: 250px;
     height: 23px;
     width: 63px;
     padding-left: 7px;
-    background-color: #26262644;
-    backdrop-filter: blur( 9.0px ); /* Blur Glass-Morphism */
+    background-color: #26262650;
+    backdrop-filter: blur(2px);
     border: 1px solid rgba(185, 185, 185, 0.678);
     border-radius: 16px;
     box-shadow: 2px 2px 15px #26262662;}
@@ -89,12 +92,11 @@ h1{
 #normal{
     width: auto;}
 #botao_zero{
-    width: 129px;
+    width: 128px;
     height: 50px;
-    padding-left: 20px;     
+    padding-left: 25px;     
     border-radius: 18px;    
     text-align: left;}
-
 .btn-preto{
     background-color: #212121;
     color: white;
@@ -124,56 +126,55 @@ h1{
     margin-right: auto;
     left: 0;
     right: 0;
-    text-align: center;
-}
+    text-align: center;}
 
 @media (max-width: 850px){ 
 /* Só vai ativar quando o width estiver menor de 850px */
     #calculadora{
         width: 400px;
-        height: 800px;
-    }
+        height: 800px;}
+    #calculadora_geral{
+        transform: none;}
+
+    #divsbotoes{
+        width: auto;
+        padding-left: 20px;}
     .botoes{
         width: 75px;
         height: 75px;
         border-radius: 100%;
         margin-bottom: 5px;
         margin-left: 5px;
-        font-size: 22px;
-    }
+        font-size: 22px;}
     #botao_zero{
         height: 75px;
         width: 157px;
         border-radius: 30px;
         margin-right: 10px;
-        padding-left: 30px;
-    }
-    #divsbotoes{
-        width: auto;
-        padding-left: 20px;
-    }    
+        padding-left: 30px;}
+  
     #cientifica{
         display: none;}
     #normal{
         display: block;
         width: 400px;
         right: 50%;
-        left: 50%;
-    }
+        left: 50%;}
+
     #resultadodiv{
         width: 400px;
         height: 50px;
         padding-top: 210px;
         padding-bottom: 15px;
-    }
+        margin-right: 0px;}
     #result{
-        width: 350px;
+        width: 300px;
         font-size: 50px;
-        padding-right: 45px;
         font-weight: 200;
         font-size: 60px;
-    }
+        overflow: hidden;
+        margin-right: 45px;}
+
     #footer{
-        margin-top: 5px;
+        margin-top: 20px;}
     }
-}
