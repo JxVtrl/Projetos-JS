@@ -63,10 +63,8 @@ function ln(){
     var x = res.innerHTML
     res.innerHTML = Math.log(x)
 }
-function rad(){
+function rad(){ 
     res.innerHTML *= Math.PI/180
-
-
 
 
 }
