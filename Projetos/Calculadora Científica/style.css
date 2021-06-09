@@ -39,10 +39,7 @@ h1{
 
         /* Display Calculadora(BTNS & RESULT) */
 #calculadora{
-    width: auto;
-    height: auto;
-    margin: auto;
-}
+    margin: auto;}
             /* Footer */
 #footer{
     display: block;
@@ -85,11 +82,6 @@ h1{
     border-radius: 43%;
     border: 0;              /* Deixar sem borda */
     outline: none;}          /* Para tirar o contorno ao selecionar */
-
-#cientifica{
-    width: auto;}
-#normal{
-    width: auto;}
 #botao_zero{
     width: 128px;
     height: 50px;
@@ -176,4 +168,4 @@ h1{
 
     #footer{
         margin-top: 20px;}
-    }
+}
