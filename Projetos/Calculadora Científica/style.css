@@ -1,17 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
 
 *{
-    user-select: none;}
+    user-select: none;
+    margin: 0px;
+    padding: 0px;}
 
 body{
     background: linear-gradient(45deg, #4d4d4d81, #A5A6A5);
     background-attachment: fixed;
     font: 16px 'Manrope', sans-serif;}
+    
+            /* Navegação MENU */
+nav a {
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding-top: 10px;
+    padding-bottom: 10px;}
+nav a:hover{
+    background-color: #bbbbbb69;
+    border-radius: 10px;
+}
 
-h1{
-    font: 16px 'Manrope', sans-serif;
-    margin-left: 10px;}
-            /* GERAL BACKGROUND */
+ul{
+    list-style: none;
+    display: block;
+    gap: 15px;
+    padding: 0px;}
+
+nav{
+    background-color: #33333369;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    position: absolute;
+    z-index:2;
+    outline: none;
+    transition: all 1s;}
+
+#checking{
+    display: none;}
+#checking:checked ~ nav{ /* o '~' significa gerar um evento */
+    transform: translateX(-250px);}
+#labelcheck{
+    display: block;
+    cursor: pointer;
+    margin: 10px 0px;}
+
+            /* GERAL CALCULADORA */
 #calculadora_geral{
     width: auto;
     height: auto;
@@ -19,7 +57,7 @@ h1{
     display: block;
     position: relative;
     transform: translateY(25%);
-}
+    z-index:1;}
             /* Resultado */
 #result{
     color: white;
@@ -30,24 +68,20 @@ h1{
     padding-top: 15px;
     font-size: 40px;
     font-weight: 600;}
-
 #resultadodiv{
     height: 45px;
     margin-right:25px;
     margin-bottom: 15px;
     padding-top: 7px;}
 
-        /* Display Calculadora(BTNS & RESULT) */
-#calculadora{
-    margin: auto;}
             /* Footer */
 #footer{
     display: block;
+    text-align: center;
     margin: auto;
     margin-top: 150px;
     height: 23px;
-    width: 63px;
-    padding-left: 7px;
+    width: 65px;
     background-color: #26262650;
     backdrop-filter: blur(2px);
     border: 1px solid rgba(185, 185, 185, 0.678);
@@ -61,6 +95,7 @@ h1{
 #id:visited{
     color: rgb(71, 224, 212);
     text-decoration: none;}
+
             /* BOTÕES */
 #divsbotoes{
     display: inline-flex;
@@ -69,8 +104,7 @@ h1{
     width: 685px;
     right: 50%;
     left: 50%;
-    transform: translateX(-50%);
-}
+    transform: translateX(-50%);}
 .botoes{
     background-color: none;
     position: relative;
@@ -81,13 +115,15 @@ h1{
     left: 15px;
     border-radius: 43%;
     border: 0;              /* Deixar sem borda */
-    outline: none;}          /* Para tirar o contorno ao selecionar */
+    outline: none;     /* Para tirar o contorno ao selecionar */
+    cursor: pointer;}          
 #botao_zero{
     width: 128px;
     height: 50px;
     padding-left: 25px;     
     border-radius: 18px;    
     text-align: left;}
+
 .btn-preto{
     background-color: #212121;
     color: white;
@@ -108,7 +144,7 @@ h1{
     color: white;
     font-size: 18px;}
 
-/* IMAGEM */
+            /* IMAGEM */
 #imgEscolhida{
     position: absolute;
     background-size: 100% 100%;
@@ -119,7 +155,8 @@ h1{
     right: 0;
     text-align: center;}
 
-@media (max-width: 850px){ 
+            /* Alteração de Modo */
+@media (max-width: 850px){
 /* Só vai ativar quando o width estiver menor de 850px */
     #calculadora{
         width: 400px;
@@ -167,5 +204,4 @@ h1{
         margin-right: 45px;}
 
     #footer{
-        margin-top: 20px;}
-}
+        margin-top: 20px;}}
