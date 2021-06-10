@@ -9,21 +9,59 @@
 </head>
 <body>
     <input type="checkbox" id="checking">
-    <label for="checking" id="labelcheck">Calculadora Científica Apple</label>
+    <label for="checking" id="openMenu">Calculadora Científica Apple</label>
     <nav>
         <ul>
-            <li><a href="#">Contato</a></li>
-            <li><a href="#">Meus projetos</a></li>
-            <li><a href="#">Sobre este projeto</a></li>
+            <li>
+                <a onclick="Contato()">Contato</a>
+            </li>
+            <li>
+                <a href="https://github.com/JxVtrl/Projetos-JS/tree/JS/Projetos" target="_blank" id="myProjects">Meus projetos</a>
+            </li>
+            <li>
+                <a onclick="Sobre()">Sobre este projeto</a>
+            </li>
         </ul>
     </nav>
+
+    <div id="divContato" style="display: block;">
+        <header id="headerContato">
+            <h1>Onde me encontrar:</h1>
+            <img src="img/close-btn.png" alt="x-btn" onclick="Contato()">
+        </header>
+        <div id="contatoLinks">
+            <ul>
+                <li><a href="https://github.com/JxVtrl" target="_blank"><img src="img/toIcon/github.ico" alt="github" class="icon"><span class="nome">GitHub</span></a></li>
+                <li><a href="https://www.linkedin.com/in/joão-vinicius-vitral-9b25221b7/" target="_blank"><img src="img/toIcon/linkedin.ico" alt="linkedin" class="icon"><span class="nome">LinkedIn</span></a></li>
+                <li><a href="https://www.instagram.com/jxvtrl/" target="_blank"><img src="img/toIcon/instagram.ico" alt="instagram" class="icon"><span class="nome">Instagram</span></a></li>
+                <li><a href="https://twitter.com/jxvtrl" target="_blank"><img src="img/toIcon/twitter.ico" alt="twitter" class="icon"><span class="nome">Twitter</span></a></li>
+                <li><a href="https://wa.me/5521966767962" target="_blank"><img src="img/toIcon/whatsapp.ico" alt="whatsapp" class="icon"><span class="nome">WhatsApp</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="popupSobre">
+        <header id="headerSobrepop" style="display: flex;">
+            <h1>Sobre este Projeto</h1>
+            <img src="img/close-btn.png" alt="x-btn" onclick="Sobre()">
+        </header>
+        <p>Devo primeiramente agradecer e dizer a todos que me educaram e me formaram como a pessoa que eu sou hoje e me fizeram entender o mínimo de tecnologia para apreciar esta area. Sou profundamente grato por vocês fazerem parte da minha historia e da busca desta formação de web-developer e/ou quem sabe full-stack developer (Não sei dizer o que o futuro me guarda). <br> 
+        Este projeto mostra o quanto é possivel que qualquer um hoje em dia consegue estudar e correr atras para formar a base de qualquer assunto que queira. O céu é o limite.</p>
+    </div>
+    <div id="divSobre">
+        <header id="headerSobre" style="display: flex;">
+            <h1 style="font-size: 25px;">Sobre este Projeto</h1>
+            <img src="img/close-btn.png" alt="x-btn" onclick="Sobre()">
+        </header>
+        <p>Devo primeiramente agradecer e dizer a todos que me educaram e me formaram como a pessoa que eu sou hoje e me fizeram entender o mínimo de tecnologia para apreciar esta area. Sou profundamente grato por vocês fazerem parte da minha historia e da busca desta formação de web-developer e/ou quem sabe full-stack developer (Não sei dizer o que o futuro me guarda). <br> 
+        Este projeto mostra o quanto é possivel que qualquer um hoje em dia consegue estudar e correr atras para formar a base de qualquer assunto que queira. O céu é o limite.</p>
+    </div>
+
     <div id="calculadora_geral">
         <picture id="imgEscolhida">
             <source media="(max-width: 850px)" srcset="img/displaySimples.png" type="image/png" >
             <img src="img/displayUp.png" alt="Imagem Flexível">
         </picture>
-
-        <div style="position: relative;" id="calculadora">
+        <div style="position: relative; margin: auto;" id="calculadora">
             <div id="resultadodiv">
                 <p id="result">0</p>
             </div>
