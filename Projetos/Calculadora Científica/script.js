@@ -1,7 +1,7 @@
 const res = document.getElementById("result")
 const ac = document.getElementById("ac")
 const mr = document.getElementById("mr")
-const w = document.documentElement.clientWidth;
+var w = document.documentElement.clientWidth;
 var baseElev = false
 var expo = false
 var memoria = 0
@@ -167,4 +167,47 @@ function calcular(){
             }
         }
     }
+}
+function Contato(){
+    var x = document.getElementById("divContato");
+    
+    if (x.style.display === "none") {
+        document.getElementById("divSobre").style.display = "none"
+        document.getElementById("popupSobre").style.display = "none"
+        x.style.display = "block";
+    } else {
+        document.getElementById("divSobre").style.display = "none"
+        document.getElementById("popupSobre").style.display = "none"
+        x.style.display = "none";
+    }
+    
+        
+}
+function Sobre(){
+    var w = document.documentElement.clientWidth;
+    if(w < 850){
+        var x = document.getElementById("popupSobre");
+        if (x.style.display === "none") {
+            document.getElementById("divContato").style.display = "none"
+            document.getElementById("divSobre").style.display = "none"
+            x.style.display = "block";
+        } else {
+            document.getElementById("divContato").style.display = "none"
+            document.getElementById("divSobre").style.display = "none"
+            x.style.display = "none";
+        }
+    }
+    else{
+        var x = document.getElementById("divSobre")
+        if (x.style.display === "none") {
+            document.getElementById("divContato").style.display = "none"
+            document.getElementById("popupSobre").style.display = "none"
+            x.style.display = "block";
+        } else {
+            document.getElementById("divContato").style.display = "none"
+            document.getElementById("popupSobre").style.display = "none"
+            x.style.display = "none";
+        }
+    }
+
 }
