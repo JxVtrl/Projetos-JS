@@ -2,6 +2,7 @@
 
 *{
     user-select: none;
+    text-decoration: none;
     margin: 0px;
     padding: 0px;}
 
@@ -9,20 +10,7 @@ body{
     background: linear-gradient(45deg, #4d4d4d81, #A5A6A5);
     background-attachment: fixed;
     font: 16px 'Manrope', sans-serif;}
-    
-            /* Navegação MENU */
-nav a {
-    display: block;
-    padding-left: 15px;
-    padding-right: 15px;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    padding-top: 10px;
-    padding-bottom: 10px;}
-nav a:hover{
-    background-color: #bbbbbb69;
-    border-radius: 10px;
-}
+
 
 ul{
     list-style: none;
@@ -34,20 +22,12 @@ nav{
     background-color: #33333369;
     width: auto;
     height: auto;
+    margin-left: 5px;
     border-radius: 10px;
     position: absolute;
     z-index:2;
     outline: none;
     transition: all 1s;}
-
-#checking{
-    display: none;}
-#checking:checked ~ nav{ /* o '~' significa gerar um evento */
-    transform: translateX(-250px);}
-#labelcheck{
-    display: block;
-    cursor: pointer;
-    margin: 10px 0px;}
 
             /* GERAL CALCULADORA */
 #calculadora_geral{
@@ -56,8 +36,9 @@ nav{
     margin: auto;
     display: block;
     position: relative;
-    transform: translateY(25%);
+    transform: translateY(35%);
     z-index:1;}
+
             /* Resultado */
 #result{
     color: white;
@@ -79,7 +60,7 @@ nav{
     display: block;
     text-align: center;
     margin: auto;
-    margin-top: 150px;
+    margin-top: 200px;
     height: 23px;
     width: 65px;
     background-color: #26262650;
@@ -185,9 +166,11 @@ nav{
         display: none;}
     #normal{
         display: block;
-        width: 400px;
-        right: 50%;
-        left: 50%;}
+        position: relative;
+        width: 350px;
+        padding: 0px;
+        margin: 0px;
+        transform: translateX(-24px);}
 
     #resultadodiv{
         width: 400px;
@@ -205,3 +188,148 @@ nav{
 
     #footer{
         margin-top: 20px;}}
+
+    #divSobre{
+        display: none;
+    }
+    #divContato{
+        display: none;
+    }
+    #popupSobre{
+        display: none;
+    }
+
+            /* Pop-Up Contato */
+#divContato{
+    height: 450px;
+    width: 450px;
+    position: fixed;
+    margin: auto;
+    display: none;
+    background-color: springgreen;
+    z-index: 2;
+    transform: translateY(40px);
+    left: calc(-50vw + 50%);
+    right: calc(-50vw + 50%);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;}
+
+#divContato header{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;}
+
+#divContato header img{
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    margin-right: 5px;}
+    
+#contatoLinks{
+    padding-top: 25px;
+    display: block;
+}
+#contatoLinks ul li{
+    display: flex;
+    transform: translateX(165px);
+    width: fit-content;
+    padding-bottom: 20px;
+}
+.icon{
+    width: 35px;
+    height: 35px;
+    padding-right: 15px;
+    padding-top: -15px;
+}
+span.nome{
+    position: absolute;
+    display: inline;
+    padding-top: 7px;
+    padding-left: 10px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+}
+            /* Sobre este Projeto PopUp */
+#popupSobre{
+    height: 450px;
+    width: 450px;
+    position: fixed;
+    margin: auto;
+    display: none;
+    text-align: center;
+    background-color: springgreen;
+    z-index: 2;
+    transform: translateY(40px);
+    left: calc(-50vw + 50%);
+    right: calc(-50vw + 50%);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;}
+
+#popupSobre header{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;}
+
+#popupSobre header img{
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    margin-right: 5px;}
+
+            /* Sobre este Projeto */
+#divSobre{
+    display: none;
+    position: fixed;
+    margin: auto;
+    z-index: 2;
+    width: 500px;
+    transform: translateY(580px);
+    left: calc(-50vw + 50%);
+    right: calc(-50vw + 50%);
+}
+
+#divSobre header{
+    justify-content: space-between;
+    margin: 10px;
+}
+#divSobre header img{
+    width: 30px;
+    height: 30px;}
+#divSobre p{
+    text-align: justify;
+    text-indent: 25px;
+}
+
+            /* Navegação MENU */
+#checking{
+    display: none;}
+#checking:checked ~ nav{ /* o '~' significa gerar um evento */
+    transform: translateX(-250px);}
+
+nav a {
+    display: flex;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    text-shadow: 1px 1px 7px silver;}
+
+nav a:hover{
+    background-color: #bbbbbb69;
+    border-radius: 10px;}
+
+#openMenu{
+display: block;
+cursor: pointer;
+background-color: silver;
+width: fit-content;
+padding: 5px 5px;
+border-radius: 10px;
+margin-top: 0px;
+padding-top: 15px;
+transform: translate3d(5px, -15px, 0);}
+
+ 
