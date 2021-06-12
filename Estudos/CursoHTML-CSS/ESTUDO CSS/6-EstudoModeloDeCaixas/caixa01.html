@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1{
+            background-color: gold;
+            height: 33px;
+            width: 396px;
+            
+            /* BORDER */
+            border: 10px groove gold; /* solid dashed dotted double groove*/
+            /* OU
+                border-width: 10px;
+                border-style: groove;
+                border-color: gold;
+                border-radius: 5px;
+                     */
+            
+            /* PADDING */
+            padding: 0px 10px 5px 10px; /* CIMA DIREITA BAIXO ESQUERDA */
+            /* OU 
+                padding-top: 0px;
+                padding-right: 10px;
+                padding-bottom: 5px;
+                padding-left: 10px;
+                
+                OU SE TODAS FOREM IGUAIS 
+                padding: 10px;
+
+                OU SE A DE CIMA FOR IGUAL A DE BAIXO E DA ESQUERDA FOR IGUAL A DIREITA 
+                padding: 10px 20px;     */
+            
+            margin: 20px auto 30px auto; /* CIMA DIREITA BAIXO ESQUERDA*/
+            /* MARGENS DIFERENTES: 
+                margin-top: 10px;
+                margin-right: 0px;
+                margin-left: 150px; 
+                margin-bottom: 50px;
+                
+                CENTRALIZAR
+                margin: auto; 
+
+                MARGENS IGUAIS:
+                margin: 10px; 
+                margin: 10px 20px;      */
+        }
+        #p{
+            text-align: center;
+        }
+        a{
+            width: fit-content;
+            margin: auto;
+            display: block;
+            
+            /* OUTLINE */
+            outline: 2px dashed indigo;
+            /* ou
+                outline-width: 5px;
+                outline-style: dashed;
+                outline-color: indigo;
+
+                padding-top: 10px;
+                padding-bottom: 10px;   */
+                
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Caixa Box-Level</h1>
+    <p id="p">Parágrafos também são exemplos de box-level, mas os <a href="#">links</a> são exemplos de caixas inline-level. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>
