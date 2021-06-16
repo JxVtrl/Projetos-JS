@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lato';
+}
+body{
+    background: var(--color-darkblue) fixed center center no-repeat;
+    background-image: linear-gradient(115deg, #faf8ebb0, #54565ba1), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+
+    /* Escalas */
+    height: auto;
+    width: 100%;
+
+    /* Posicionamento */
+    z-index: -1;
+    top: 0;
+    left: 0;
+
+}
+header{
+    color: black;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+main{
+    background-color: #76777B;
+    display: block;
+    margin: auto;
+    width: fit-content;
+    color: white;
+}
+label{
+    display: block;
+    margin: 2px;
+}
+p{
+    
+}
+section{
+    margin:  15px 0px;
+}
+.input{
+    width: 100%;
+}
+#corpo{
+    padding: 30px;
+}

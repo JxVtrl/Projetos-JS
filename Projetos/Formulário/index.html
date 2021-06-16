@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pesquisa Universitária</h1>
+        <h2>Um simples exemplo de projeto para formulários</h2>
+    </header>
+    <main>
+        <div id="corpo">
+            <section>
+                <p>Nome</p>
+                <input type="text" name="Nome" id="nome" class="input" placeholder="Escreva seu nome">
+            </section>
+            <section>
+                <p>Email</p>
+                <input type="email" name="Email" id="email" class="input" placeholder="Escreva seu email">
+            </section>
+            <section>
+                <p>Idade</p>
+                <input type="number" name="Idade" id="idade" class="input" placeholder="Entre sua idade" min="10">
+            </section>
+            <section>
+                <p>Qual é o seu nível de escolaridade atual ou o mais elevado que estudou?</p>
+                <select name="formacao" id="formacao" class="input">
+                    <option selected disabled >Selecione</option>
+                    <option value="">Fundamental Incompleto</option>
+                    <option value="">Fundamental</option>
+                    <option value="">Ensino Médio Incompleto</option>
+                    <option value="">Ensino Médio</option>
+                    <option value="">Ensino Superior Incompleto</option>
+                    <option value="">Ensino Superior</option>
+                    <option value="">Pós Graduação Incompleto</option>
+                    <option value="">Pós Graduação</option>
+                    <option value="">Mestrado Incompleto</option>
+                    <option value="">Mestrado</option>
+                    <option value="">Doutorado Incompleto</option>
+                    <option value="">Doutorado</option>
+                    <option value="">Pós Doutorado</option>
+                </select>
+            </section>
+            <section>
+                <p>O que você gostaria de ver ao entrar em um portifólio de um Web-Deveolper?</p>
+                <label>
+                    <input type="checkbox">Projetos em Front-end
+                </label>
+                <label>
+                    <input type="checkbox">Projetos em Back-end
+                </label>
+                <label>
+                    <input type="checkbox">Repositórios pessoais
+                </label>
+                <label>
+                    <input type="checkbox">Estatísticas de Estudos
+                </label>
+                <label>
+                    <input type="checkbox">Principais desafios
+                </label>
+                <label>
+                    <input type="checkbox">Notas acadêmicas
+                </label>
+                <label>
+                    <input type="checkbox">Diplomas
+                </label>
+                <label>
+                    <input type="checkbox">Certificações
+                </label>
+                <label>
+                    <input type="checkbox">Certificados
+                </label>
+            </section>
+            <section>
+                <p>Algum comentário ou sugestão?</p>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Escreva seu comentário aqui" class="input"></textarea>
+            </section>
+            <section>
+                <button>Enviar</button>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
