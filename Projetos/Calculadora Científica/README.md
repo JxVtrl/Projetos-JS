@@ -1,8 +1,8 @@
-# Calculadora completa APPLE IPHONE
-
+<h1>Calculadora Completa Apple Iphone</h1>
+<p>
 Neste projeto tentei botar todos meus conhecimentos iniciais da trinca js html e css para construir uma calculadora funcional cujo translaciona para alterar o modo.
-<img src="gif/cienCalc.gif" alt="Gif">
-
+</p>
+<center><img src="gif/cienCalc.gif" alt="Gif" width="550px"></center>
 ## Principais passos do projeto
 
 - Procurei um template para usar no projeto e selecionei o layout do iphone X
