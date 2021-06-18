@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+
+}
+header{
+    background-color: #212121;
+    width: auto;
+    height: 56px;
+    display: flex;
+}
+body{
+    background-color: #191919;
+}
+#guide-logo{
+    display: flex;
+    width: 150px;
+    height: 56px;
+}
+#guide-button{
+    position: relative;
+    width: auto;
+    height: auto;
+    left: 35%;
+    top: 35%;
+}
+#logo-youtube{
+    position: relative;
+    width: auto;
+    height: auto;
+    top: 30%;
+    left: 10px;
+}
+#pesquisa{
+    position: relative;
+    display: flex;
+    height: 24px;
+    top: 30%;
+}
+#mic{
+    width: 17px;
+    height: 20px;
+    display: flex;
+    margin: 0px 15px;
+}
