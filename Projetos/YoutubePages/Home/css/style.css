@@ -1,44 +1,117 @@
-*{
-    margin: 0px;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+i{
+    font-style: normal;
+    padding: 0 7.5px;
 }
 header{
-    background-color: #212121;
+    background-color: #202020;
+    display: flex;
     width: auto;
     height: 56px;
-    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
 }
 body{
+    margin: 0px;
     background-color: #191919;
+    color: white;
 }
 #guide-logo{
+    margin: 17px;
     display: flex;
-    width: 150px;
-    height: 56px;
-}
-#guide-button{
-    position: relative;
-    width: auto;
-    height: auto;
-    left: 35%;
-    top: 35%;
+    align-items: center;
 }
 #logo-youtube{
-    position: relative;
-    width: auto;
-    height: auto;
-    top: 30%;
-    left: 10px;
+    margin: 0px 27px;
 }
 #pesquisa{
     position: relative;
+    border: 1px solid #303030;
     display: flex;
-    height: 24px;
-    top: 30%;
+    height: 30px;
+    width: fit-content;
+    border-radius: 1px;
 }
-#mic{
-    width: 17px;
-    height: 20px;
+#pesquisa input{
+    background-color: #121212;
+    width: 500px;
+    height: 100%;
+    border-radius: 0;
+    border: none;
+    margin: 0px;
+}
+input::placeholder{
+    font-size: 1.2em;
+    font-weight: 500;
+    padding-left: 5px;
+}
+#pesquisa button i{
+    font-size: 12px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    color: #585858;
+}
+#pesquisa button{
+    width: 51px;
+    height: 100%;
+    border-radius: 0;
+    border: none;
+    background-color: #303030;
+}
+#icones{
+    line-height: 33px;
+}
+#main-body{
+    height: calc(100vh - 70px); 
+}
+#categorias{
+    width: 240px;
+    height: 100%;
+    background: #212121;
+}
+.categoria{
     display: flex;
-    margin: 0px 15px;
+    align-items: center;
+    padding: 15px 5px;
+    height: 40px;
+    padding-left: 25px;
 }
+.categoria p{
+    font-size: 14px;
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-left: 24px;
+}
+.categoria:hover{
+    background: #383838;
+    cursor: pointer;
+}
+.secao-categorias{
+    border-bottom:  1px solid #383838;
+    padding: 13px 0px;
+    width: 92%;
+}
+.titulo-categorias{
+    color: #959595;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0px 24px;
+
+}
+.guide-icones{
+    width: 19px;
+    height: 19px;
+}
+#videos{
+    width: 100%;
+    height: 100%;
+    background: #181818;
+}
+
