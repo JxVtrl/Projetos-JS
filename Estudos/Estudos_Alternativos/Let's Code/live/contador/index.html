@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <article class="clock" id="clock">
+        <h3 id="titulo">Contador com JS!</h3>
+        <h4 class="esconde">Inserir o tempo:</h4>
+        <div id="input1" class="esconde">
+            <input type="number" id="minutos" placeholder="Min" min="0">:
+            <input type="number" id="segundos" placeholder="Seg" max="60" min="0">
+            <input type="button" id="botao" value="Inicio!">
+        </div>
+        <div class="count">
+            <div id="timer"></div>
+        </div>
+        <div id="input2">
+            <input type="button" value="Pausar">
+            <input type="button" value="Parar">
+        </div>
+    </article>
+</body>
+</html>

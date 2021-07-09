@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    font-size: 16px;
+    font-family: tahoma;
+}
+
+article{
+    margin: 50px auto;
+    width: 300px;
+    text-align: center;
+    background-color: rgba(192, 192, 192, 0.384);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 5px;
+    box-shadow: 3px 3px 10px #ccc;
+}
+
+article h3{
+    padding: 10px;
+    color: black;
+}
+
+#input1{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px auto;
+}
+
+#input1 input{
+    width: 50px;
+    height: 30px;
+    text-align: center;
+}
+
+#input2{
+    display: none;
+}
+
+#botao{
+    height: 45px;
+    width: 150px;
+}
+
