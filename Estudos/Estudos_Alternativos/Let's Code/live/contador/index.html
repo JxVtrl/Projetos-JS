@@ -13,10 +13,18 @@
         <h3 id="titulo">Contador com JS!</h3>
         <h4 class="esconde">Inserir o tempo:</h4>
         <div id="input1" class="esconde">
-            <input type="number" id="minutos" placeholder="Min" min="0">:
-            <input type="number" id="segundos" placeholder="Seg" max="60" min="0">
-            <input type="button" id="botao" value="Inicio!">
+            <form action="">
+                <div>
+                    <input type="number" id="minutos" placeholder="Min" min="0" value="0">
+                    <label for="minutos">Minutos</label>
+                </div>
+                <div>
+                    <input type="number" id="segundos" placeholder="Seg" max="60" min="0" value="0">
+                    <label for="segundos">Segundos</label>
+                </div>
+            </form>
         </div>
+        <input type="button" id="botao" value="Inicio!" class="esconde">
         <div class="count">
             <div id="timer"></div>
         </div>

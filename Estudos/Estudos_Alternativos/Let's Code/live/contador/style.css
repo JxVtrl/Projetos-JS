@@ -27,13 +27,21 @@ article h3{
 
 #input1{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin: 10px auto;
 }
+#input1 form{
+    display: flex;
+    gap: 20px;
+}
 
-#input1 input{
+#input1 form div input{
     width: 50px;
     height: 30px;
+    text-align: center;
+}
+#input1 form div label{
+    display: flex;
     text-align: center;
 }
 
