@@ -16,3 +16,6 @@ iconMenu.addEventListener('click',() => {
     // Efeito Toggle
     // Show e Hide com Height ou Width
 })
+
+var x
+console.log(x)
